@@ -1,0 +1,9 @@
+{
+  "name": "brugsen",
+  "version": "1.0.0",
+  "description": "📈 A dashboard for calculating effective money making methods for RuneScape",
+  "main": "index.js",
+  "repository": "https://github.com/FlareLine/brugsen",
+  "author": "FlareLine <ethan@flareline.com>",
+  "license": "MIT"
+}
