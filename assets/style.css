@@ -3,37 +3,8 @@
   src: url("Lotion-Regular.woff") format("woff");
 }
 
-::-moz-selection {
-  background-color: transparent;
-}
-
-::selection {
-  background-color: transparent;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  position: relative;
   font-family: "Lotion Web", Courier, sans-serif;
-  font-size: 13pt;
-  margin: 0 auto;
-  padding: 0;
-  background-color: #222222;
-  color: #7ED6DF;
-  fill: #7ED6DF;
-}
-
-a {
-  color: inherit;
-}
-
-.material-icons {
-  display: inline-flex;
-  vertical-align: top;
-  font-size: inherit !important;
-  margin: 0;
-  padding: 0;
+  background-color: #C4B392;
+  color: #564F41;
 }
