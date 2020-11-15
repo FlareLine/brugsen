@@ -1,0 +1,23 @@
+name: Build for development
+on:
+  push:
+    branches:
+      - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v1
+      - name: Cache build output
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+      - name: Setup build toolchain
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '10.x'
+      - name: Lint and build project
+        run: yarn && yarn lint && yarn build-prod
